@@ -1,0 +1,45 @@
+div#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; 
+
+}
+
+.wrapper{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    max-width: 80%;
+    background-color: aquamarine;
+    border-radius: 15px;
+    padding: 10px; 
+
+
+/* 
+    use pixels here^^^  
+    its good to set the same pixals as the gap for stlying 
+    */
+}
+
+.nav{
+    grid-row: span 2; 
+    /* //span 2 = takes up 2 collimns of the parent grid */
+}
+
+.visitors{
+    grid-column: span 3;
+    display: flex; 
+    flex-direction: column;
+    /* //everything is added as row^  */
+    justify-content: center;
+    align-items: center;
+}
+
+.visitors, .reviewSquare, .averageSquare ,.sentimentalSquare {
+    background-color: blueviolet;
+    border-radius: 5px;
+}

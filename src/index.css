@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav{
+ 
+  border: solid red;
+}
+
+#root {
+  background-color: aqua;
+  opacity: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: 
+  "nav squares"
+  "nav visitors";
+}
