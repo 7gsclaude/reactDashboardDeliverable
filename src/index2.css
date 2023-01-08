@@ -1,5 +1,7 @@
 div#root{
+
     display: flex;
+    /* allows the display to be ready for a flexbox */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -9,13 +11,18 @@ div#root{
 }
 
 .wrapper{
+     
     display: grid;
+    /* generates grid */
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* / each of these 1frs stands for a collumn */
     grid-template-rows: 1fr 2fr;
+    /* this second option i think says, to take up 2 spaces and 1 block.  */
     max-width: 80%;
     background-color: aquamarine;
     border-radius: 15px;
+    /* raidus is better to be measured in px because the margin of change is smaller  */
     padding: 10px; 
 
 
@@ -27,7 +34,8 @@ div#root{
 
 .nav{
     grid-row: span 2; 
-    /* //span 2 = takes up 2 collimns of the parent grid */
+    /* //span 2 = takes up 2 rows of the parent grid 
+    play with it adn youll see the rows it opccupies  */
 }
 
 .visitors{
@@ -36,10 +44,11 @@ div#root{
     flex-direction: column;
     /* //everything is added as row^  */
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    /* updated way of centering boxes.  */
 }
 
-.visitors, .reviewSquare, .averageSquare ,.sentimentalSquare {
+.visitors, .reviewSquare, .averageSquare ,.sentimentalSquare, .nav {
     background-color: blueviolet;
     border-radius: 5px;
 }
